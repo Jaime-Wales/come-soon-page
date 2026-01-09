@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coming Soon</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Our website is coming soon. Stay tuned." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #020617;
+      --text: #e5e7eb;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Inter", system-ui, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: radial-gradient(circle at top, #020617, #000);
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      max-width: 720px;
+      width: 100%;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .card {
+      background: rgba(2, 6, 23, 0.7);
+      backdrop-filter: blur(12px);
+      border-radius: 1rem;
+      padding: 3rem 2rem;
+      border: 1px solid rgba(148, 163, 184, 0.15);
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 5vw, 3.5rem);
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      color: var(--muted);
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 0.4rem 0.75rem;
+      border-radius: 999px;
+      background: rgba(56, 189, 248, 0.15);
+      color: var(--accent);
+      font-weight: 600;
+      font-size: 0.85rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .footer {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .footer a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .glow {
+      text-shadow: 0 0 30px rgba(56, 189, 248, 0.35);
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <div class="card">
+      <span class="badge">🚧 Under Construction</span>
+
+      <h1 class="glow">Coming Soon</h1>
+
+      <p>
+        We’re working behind the scenes to build something great.
+        <br />
+        Check back soon for updates.
+      </p>
+
+      <div class="footer">
+        © <span id="year"></span> • Built for the decentralized web
+      </div>
+    </div>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
